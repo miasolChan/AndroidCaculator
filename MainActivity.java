@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     String result;//计算结果
 
     String lastRes;
-    float nowNum;
     List<String> bufferList;//m的缓存器
 
     //中缀,ArrayList模拟队列
@@ -206,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
                     viewStr.append(nowChar);
                     tv.setText(viewStr);
                     flag = false;
-                }//前面是数字
+                }//前面是数字或.
                 else {
                     //前方输入数据入队
                     arrList.add(numStr.toString());
